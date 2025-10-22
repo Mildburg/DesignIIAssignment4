@@ -2,7 +2,7 @@ package DesignIIAssignment4;
 
 import java.util.List;
 
-public class Adventurer implements Comparable{
+public class Adventurer{
     private String name;
     private int age;
     private String role;
@@ -70,10 +70,5 @@ public class Adventurer implements Comparable{
                 + skills;
 
         return info;
-    }
-
-    @Override
-    public int compareTo(Object o) {
-        return 0;
     }
 }
