@@ -2,12 +2,29 @@ package DesignIIAssignment4;
 
 import java.util.List;
 
+/**
+ * Adventurer Class.
+ */
+
 public class Adventurer{
+    /**
+     * Standard String, int and double for the name, age, role, and gold Earned.
+     * Skills is a list of skills.
+     */
     private String name;
     private int age;
     private String role;
     private double goldEarned;
     private List<Skill> skills;
+
+    /**
+     * Basic Constructor for Adventurer class.
+     * @param name - name of adventurer. String
+     * @param age - age of adv. Int
+     * @param role - role of adv. String
+     * @param goldEarned - gold earned from quests. Double.
+     * @param skills - list of Skills each adv has.
+     */
 
     public Adventurer(String name, int age, String role, double goldEarned, List<Skill> skills){
         this.name = name;
@@ -63,6 +80,11 @@ public class Adventurer{
             this.skills = skills;
     }
 
+    /**
+     * Overridden toString() method for adv.
+     * @return - Returns String of information about adventurers
+     */
+    @Override
     public String toString(){
         String info = "";
 

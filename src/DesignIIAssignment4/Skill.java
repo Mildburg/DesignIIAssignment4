@@ -1,5 +1,8 @@
 package DesignIIAssignment4;
 
+/**
+ * Enumeration naming skills adventurers can have.
+ */
 public enum Skill {
     SWORDSMANSHIP,
     ARCHERY,
