@@ -49,7 +49,6 @@ public class Main {
         double goldThresh = 1000;
         List<Adventurer> updatedAdv = guilds.stream() // stream of guilds
                 .flatMap(g -> g.getAdventurers().stream())// stream of adventurers
-                .filter(a -> a.getGoldEarned() < goldThresh) // filters out adventurers with more than 1000 gold
                 .map(a -> {
                     if(a.getGoldEarned() < 1000) {
                         return new Adventurer(a.getName(), a.getAge(), a.getRole(), a.getGoldEarned() * 1.2,
